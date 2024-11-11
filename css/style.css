@@ -312,12 +312,10 @@ img {
     color: white;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     padding-top: 20px;
 
 }
-
-.footer-menu h3 {}
 
 .footer-menu a {
     text-decoration: none;
@@ -327,7 +325,7 @@ img {
 }
 
 .footer-menu p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .footer-menu ul li {
@@ -337,28 +335,26 @@ img {
 }
 
 .font-awesome {
-    font-size: 40px;
-    color: rgba(0, 0, 255, 0.788);
+    font-size: 35px;
     margin-top: 20px;
     display: flex;
-    gap: 30px;
+    gap: 23px;
+}
+
+.font-awesome a {
+    color: aqua;
 }
 
 hr {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .copy {
 
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     color: white;
-
-}
-
-.last {
-    color: rgb(179, 255, 0);
-    text-decoration: none;
+    font-size: 15px;
 }
 
 .bottom-to-top {

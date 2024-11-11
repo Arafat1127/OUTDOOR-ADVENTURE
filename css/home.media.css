@@ -161,6 +161,58 @@
         width: 100%;
     }
 
+    /* ======footer section====== */
+
+    .footer-main {
+        background-color: rgba(0, 0, 0, 0.774);
+        background-size: 100%;
+    }
+
+    .footer {
+        display: block;
+        padding: 10px 0 10px 15px;
+
+    }
+
+    .footer-menu a {
+        display: block;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .footer-menu p {
+        font-size: 13px;
+    }
+
+    .footer-menu h2 {
+        font-size: 16px;
+    }
+
+    .footer-menu ul li {
+        font-size: 12px;
+        margin-left: -40px;
+        padding: 6px;
+    }
+
+    .font-awesome {
+        font-size: 20px;
+        margin-top: 2px;
+        gap: 3px;
+    }
+
+    hr {
+        margin-bottom: 20px;
+    }
+
+    .copy {
+        padding-bottom: 10px;
+    }
+
+    .copy h3 {
+        font-size: 10px;
+    }
+
+
 
 }
 
@@ -314,7 +366,58 @@
         margin: 0 auto;
     }
 
+    /* ======footer section====== */
+    .footer-main {
+        background-color: rgba(0, 0, 0, 0.774);
+        background-size: cover;
+    }
 
+    .footer {
+        display: block;
+        padding: 10px 0 10px 40px;
+
+    }
+
+    .footer-menu a {
+        display: block;
+        padding: 6px;
+        font-size: 15px;
+    }
+
+    .footer-menu p {
+        font-size: 15px;
+    }
+
+    .footer-menu h2 {
+        font-size: 20px;
+    }
+
+    .footer-menu ul li {
+        font-size: 15px;
+        margin-left: -40px;
+        padding: 6px;
+    }
+
+    .font-awesome {
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .font-awesome a {
+        font-size: 25px;
+    }
+
+    hr {
+        margin-bottom: 20px;
+    }
+
+    .copy {
+        padding-bottom: 10px;
+    }
+
+    .copy h3 {
+        font-size: 13px;
+    }
 }
 
 
@@ -407,11 +510,205 @@
         margin: 0 auto;
     }
 
+    /* ======footer section====== */
+
+    .footer-main {
+        background-color: rgba(0, 0, 0, 0.774);
+        background-size: cover;
+    }
+
+    .footer {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        padding-top: 20px;
+
+    }
+
+    .footer-menu h2 {
+        font-size: 15px;
+    }
+
+    .footer-menu a {
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 8px;
+    }
+
+    .footer-menu p {
+        font-size: 12px;
+    }
+
+    .footer-menu ul li {
+        font-size: 10px;
+        list-style: none;
+        margin-left: -37px;
+        padding: 8px;
+    }
+
+    .font-awesome {
+        display: flex;
+        gap: 10px;
+    }
+
+    .font-awesome a {
+        color: aqua;
+        font-size: 17px;
+    }
+
+    hr {
+        margin-bottom: 30px;
+    }
+
+    .copy {
+
+        text-align: center;
+        padding-bottom: 15px;
+        color: white;
+    }
+
+    .copy h3 {
+        font-size: 12px;
+    }
 }
 
 /* ===== samall monitor / small laptop ====== */
 @media only screen and (min-width:993px) and (max-width:1024px) {
     h1 {
         font-size: 55px;
+    }
+
+    /* ======footer section====== */
+
+    .footer-main {
+        background-color: rgba(0, 0, 0, 0.774);
+        background-size: cover;
+    }
+
+    .footer {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        padding-top: 20px;
+
+    }
+
+    .footer-menu h2 {
+        font-size: 15px;
+    }
+
+    .footer-menu a {
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 8px;
+    }
+
+    .footer-menu p {
+        font-size: 12px;
+    }
+
+    .footer-menu ul li {
+        font-size: 10px;
+        list-style: none;
+        margin-left: -37px;
+        padding: 8px;
+    }
+
+    .font-awesome {
+        display: flex;
+        gap: 10px;
+    }
+
+    .font-awesome a {
+        color: aqua;
+        font-size: 17px;
+    }
+
+    hr {
+        margin-bottom: 30px;
+    }
+
+    .copy {
+
+        text-align: center;
+        padding-bottom: 15px;
+        color: white;
+    }
+
+    .copy h3 {
+        font-size: 12px;
+    }
+}
+
+
+
+/* ======large laptop and small monitor======= */
+@media only screen and (min-width:1025px) and (max-width:1440px) {
+    .footer-main {
+        background-color: rgba(0, 0, 0, 0.774);
+        background-size: cover;
+    }
+
+    .footer {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        padding-top: 20px;
+
+    }
+
+    .footer-menu h2 {
+        font-size: 18px;
+    }
+
+    .footer-menu a {
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 8px;
+    }
+
+    .footer-menu p {
+        font-size: 14px;
+    }
+
+    .footer-menu ul li {
+        font-size: 10px;
+        list-style: none;
+        margin-left: -37px;
+        padding: 8px;
+    }
+
+    .font-awesome {
+        display: flex;
+        gap: 10px;
+    }
+
+    .font-awesome a {
+        color: aqua;
+        font-size: 23px;
+    }
+
+    hr {
+        margin-bottom: 30px;
+    }
+
+    .copy {
+
+        text-align: center;
+        padding-bottom: 15px;
+        color: white;
+    }
+
+    .copy h3 {
+        font-size: 12px;
     }
 }
