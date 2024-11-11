@@ -1,113 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     box-sizing: border-box;
     font-size: 17px;
+    font-family: "Roboto", sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-h1{
+h1 {
     font-size: 70px;
 }
-.span-center{
+
+/* .span{
     display: flex;
     justify-content: center;
     margin-top: 25px;
-}
+} */
 
-.span{
+.span {
     height: 5px;
     width: 172px;
     display: inline-block;
     background: red;
     border-radius: 5px;
 }
-header{
-    background-image:url(../images/dawn.jpg);
+
+header {
+    background-image: url(../images/dawn.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  
+    background-size: cover;
     padding: 0 5% 0 5%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.733); 
+    background-color: rgba(0, 0, 0, 0.733);
     background-blend-mode: multiply;
-}    
+}
 
-.navbar{
+.navbar {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: fixed;
     left: 5%;
     right: 5%;
     background-color: transparent;
-    transition: background-color 0.35s;
-    z-index: 1000 ;
-}
- 
-.logo{
-    font-size: 34px;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    z-index: 1000;
 }
 
-.logo a{
+.navbar.scrolled {
+    background-color: rgb(0, 0, 0);
+    left: 0%;
+    right: 0%;
+    padding: 0px 5%;
+}
+
+/* .logo{
+    font-size: 34px;
+} */
+
+.logo a {
     color: white;
     text-decoration: none;
     font-size: 25px;
     display: inline-block;
 }
 
-.logo a h5{font-weight: 600px;}
-.logo a h5 span{font-weight: 100;
-                background-color: rgb(255 255 255);
-                
+.logo a h5 {
+    font-weight: 600px;
+    margin: 30px 0 30px 0;
 }
 
-nav{}
+.logo a h5 span {
+    font-weight: 100;
+    /* background-color: rgb(255 255 255); */
 
-nav ul{
+}
+
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     padding: 0 0 0 15px;
+    padding: 0 0 0 15px;
+    text-transform: capitalize;
 }
 
 
 /* ===== banner section===== */
 
-.banner{
+.banner {
     text-align: center;
     padding: 50px 0px 100px 0px;
 }
 
-.banner h4{
+.banner h4 {
     font-size: 25px;
     font-style: italic;
     margin: 180px 0 5px 0;
 }
 
-.banner h1{
+/* .banner h1{
     font-size: 72px;
-}
+} */
 
 
-.banner button{
+.banner button {
     background: red;
     border: 1px solid red;
     padding: 15px 30px;
@@ -115,193 +141,202 @@ nav ul li a{
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
-.banner button:hover{
+.banner button:hover {
     background: rgba(255, 0, 0, 0);
     letter-spacing: 2px;
-   
+
 }
 
 /* ========== upcomming events=========== */
 
-.event-main{
+.event-main {
     padding: 50px 15%;
-}
-
-
-.event-main h3{
-    font-size: 42px;
-    margin: 20px 0 0 0;
     text-align: center;
-
 }
 
-.event{
+
+.event-main h3 {
+    font-size: 40px;
+    margin: 20px 0 0 0;
+}
+
+.event {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 30px 0 0 0;
-    gap: 90px;
+    /* gap: 90px; */
 }
 
-.child{
-    display: flex;
-    justify-content: center;
-}
-.event-item{
+.event-item {
     width: 50%;
-    margin: 21px 0 0 0;
+    margin: 20px;
 }
 
-.event-item img{
+.event-item img {
     height: 350px;
     width: 100%;
     object-fit: cover;
+    -o-object-fit: cover;
     border-radius: 10px;
-    display: flex;
     gap: 17px;
     box-shadow: 15px 15px #f1f1f1;
 }
 
-.event-item h5{
+.event-item h5 {
     font-size: 21px;
-    margin: 50px 0 0 0;
-    text-align: center;
+    margin: 10px 0 0 0;
+    /* text-align: center; */
 }
 
-.event-item p{
-    font-size: 17px;
-}
-
-.event-item a{
+.event-item a {
     color: red;
     letter-spacing: 3px;
     text-decoration: none;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 25px; */
 }
 
 /* ======explore the world===== */
 
-.explore{
-    background-image:url(../images/father.jpg);
+.explore {
+    background-image: url(../images/father.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  
+    background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 255, 0.416); 
+    background-color: rgba(0, 0, 255, 0.416);
     background-blend-mode: multiply;
     padding: 70px;
     color: white;
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
-.explore-item{
+.explore-item {
     width: 50%;
 }
 
-.explore-item h1{
-    font-size: 70px;
+.explore-item h1 {
     margin: 40px 0 0 0;
 }
 
-.explore-item p{
+.explore-item p {
     margin: 30px 0 30px 0;
 }
 
-.explore-item a{
+.explore-item a {
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 600;
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /* ====tour section==== */
 
-.tour-main{
+.tour-main {
     padding: 5%;
 }
 
-.tour{
+.tour {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
-.tour-item{
+.tour-item {
     width: 33%;
     padding: 15px;
 }
 
-.tour-item h3{
+.tour-item h3 {
     font-size: 30px;
     margin: 0 0 10px 0;
 }
 
-.tour-item p{
+.tour-item p {
     margin: 30px 0 30px 0;
 }
 
-.tour-item a{
+.tour-item a {
     text-decoration: none;
     color: red;
     letter-spacing: 1px;
     font-size: 20px;
+    text-transform: capitalize;
 }
 
-.tour-item img{}
 
-.img-one{
+.img-one {
     height: 300px;
     object-fit: cover;
+    -o-object-fit: cover;
     margin: 0 0 20px 0;
 }
 
-.img-two{
+.img-two {
     height: 370px;
     object-fit: cover;
+    -o-object-fit: cover;
     margin: 0 0 20px 0;
-    
+
 }
-img{
+
+img {
     width: 100%;
 }
 
 
 /* ======footer section====== */
 
-.footer-main{
-    background-color:rgba(0, 0, 0, 0.774);
+.footer-main {
+    background-color: rgba(0, 0, 0, 0.774);
     background-size: cover;
 }
 
-.footer{
-    color:white;
+.footer {
+    color: white;
     display: flex;
     justify-content: space-around;
     padding-bottom: 100px;
     padding-top: 20px;
 
 }
-.footer-menu h3{}
-.footer-menu a{
+
+.footer-menu h3 {}
+
+.footer-menu a {
     text-decoration: none;
     color: white;
     display: block;
     padding: 8px;
 }
-.footer-menu p{
+
+.footer-menu p {
     font-size: 20px;
 }
-.footer-menu ul li{
+
+.footer-menu ul li {
     list-style: none;
     margin-left: -37px;
     padding: 8px;
 }
 
-.font-awesome{
+.font-awesome {
     font-size: 40px;
     color: rgba(0, 0, 255, 0.788);
     margin-top: 20px;
@@ -309,17 +344,19 @@ img{
     gap: 30px;
 }
 
-hr{
+hr {
     margin-bottom: 50px;
 }
-.copy{
+
+.copy {
 
     text-align: center;
     padding-bottom: 25px;
     color: white;
 
 }
-.last{
+
+.last {
     color: rgb(179, 255, 0);
     text-decoration: none;
 }
@@ -338,123 +375,4 @@ hr{
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-
-
-  /* /* ========media queries=======*/
-     /* ====== media queries ====== */
-  /* mobile device */
-@media only screen and (max-width:668px){
-    h1{
-        font-size: 35px;
-    }   
-    .span{
-        height: 3px;
-        width: 140px;
-    }
-
-    .navbar{
-        display: block;
-    }
-    .logo a{
-        font-size: 18px;
-        display: block;
-        text-align: center;
-    }
-    .logo a h5{
-        margin: 15px 0 20px 0;
-    }
-    nav ul{
-        text-align: center;
-    }
-    nav ul li a{
-        font-size: 16px;
-        font-weight: 500;
-        padding: 0 5px 0 5px;
-    }
-
-    /* ==== banner section ==== */
-    .banner{
-        padding: 1px 0 60px 0px;
-    
-    }
-    .banner h4{
-        font-size: 17px;
-        margin: 161px 0 5px 0;
-    }
-    .banner button{
-        padding: 8px 24px;
-        font-size: 18px;
-    }
 }
-
-/* ======= landscape mobile, tab device ======= */
-@media only screen and (min-width:669px) and (max-width:768px){
-    h1{
-        font-size: 40px;
-    }   
-    .span{
-        height: 4px;
-        width: 150px;
-    }
-
-    .navbar{
-        display: block;
-    }
-
-    .logo a{
-        font-size: 19px;
-        display: block;
-        text-align: center;
-    }
-    .logo a h5{
-        margin: 20px 0 20px 0;
-    }
-    nav ul{
-        text-align: center;
-    }
-    nav ul li a{
-        font-size: 17px;
-        font-weight: 500;
-        padding: 0 5px 0 5px;
-    }
-
-    /* ==== banner section ==== */
-    .banner{
-        padding: 1px 0 60px 0px;
-    
-    }
-    .banner h4{
-        font-size: 18px;
-        margin: 161px 0 5px 0;
-    }
-    .banner button{
-        padding: 10px 24px;
-        font-size: 18px;
-    }
-   
-}
-
-/* ===== tab landscape, large tab, tv er moto choto mnitor / small monito */
-@media only screen and (min-width:769px) and (max-width:992px) {
-    h1{
-        font-size: 50px;
-    }   
-    .span{
-        height: 4px;
-        width: 150px;
-    }
-
-
-     /* ==== banner section ==== */
-    .banner h4{
-        font-size: 20px;
-        margin: 161px 0 5px 0;
-    }
-    .banner button{
-        padding: 12px 26px;
-        font-size: 20px;
-    }
-     
-}
-
